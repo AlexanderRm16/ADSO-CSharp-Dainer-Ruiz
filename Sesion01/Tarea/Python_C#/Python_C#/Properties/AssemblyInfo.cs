@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // La información general de un ensamblado se controla mediante el siguiente 
 // conjunto de atributos. Cambie estos valores de atributo para modificar la información
 // asociada a un ensamblado.
-[assembly: AssemblyTitle("Metodos_Arreglos_Cadenas")]
+[assembly: AssemblyTitle("Python_C#")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Metodos_Arreglos_Cadenas")]
+[assembly: AssemblyProduct("Python_C#")]
 [assembly: AssemblyCopyright("Copyright ©  2026")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // El siguiente GUID sirve como id. de typelib si este proyecto se expone a COM.
-[assembly: Guid("3a8149f1-291a-4e91-86a1-f87f85247f40")]
+[assembly: Guid("95ea48be-3ea9-4f23-aec7-8dfe9f92dcf1")]
 
 // La información de versión de un ensamblado consta de los cuatro valores siguientes:
 //

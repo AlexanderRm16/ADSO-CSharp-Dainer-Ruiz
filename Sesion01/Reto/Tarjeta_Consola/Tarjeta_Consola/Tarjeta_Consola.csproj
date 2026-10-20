@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3A8149F1-291A-4E91-86A1-F87F85247F40}</ProjectGuid>
+    <ProjectGuid>{B139ABD9-706E-4AF9-BA1B-BBF0F511AAA6}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Metodos_Arreglos_Cadenas</RootNamespace>
-    <AssemblyName>Metodos_Arreglos_Cadenas</AssemblyName>
+    <RootNamespace>Tarjeta_Consola</RootNamespace>
+    <AssemblyName>Tarjeta_Consola</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
