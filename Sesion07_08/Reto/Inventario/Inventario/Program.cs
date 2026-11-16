@@ -22,7 +22,9 @@ class Program
             Console.WriteLine("3. Vender producto");
             Console.WriteLine("4. Ver inventario");
             Console.WriteLine("5. Ver stock bajo (< 5 unidades)");
-            Console.WriteLine("6. Salir");
+            Console.WriteLine("6. Buscar producto");
+            Console.WriteLine("7. Eliminar producto");
+            Console.WriteLine("8. Salir");
             Console.Write("\nSeleccione una opción: ");
 
             try
@@ -99,6 +101,51 @@ class Program
                         break;
 
                     case "6":
+                        Console.Write("Ingrese texto a buscar (nombre o código): ");
+                        string texto = Console.ReadLine();
+
+                        var resultados = servicio.BuscarPorTexto(texto);
+                        Console.WriteLine("\n--- RESULTADOS DE LA BÚSQUEDA ---");
+                        if (resultados.Count == 0)
+                        {
+                            Console.WriteLine("No se encontraron productos.");
+                        }
+                        else
+                        {
+                            foreach (var r in resultados)
+                            {
+                                Console.WriteLine($"Código: {r.Codigo} | Nombre: {r.Nombre} | Precio: ${r.Precio} | Stock: {r.Stock}");
+                            }
+                        }
+                        break;
+
+                    case "7":
+                        Console.Write("Ingrese código del producto a eliminar: ");
+                        string codigoEliminar = Console.ReadLine();
+                        var aEliminar = servicio.ObtenerInventario().FirstOrDefault(x =>
+                            string.Equals(x.Codigo, codigoEliminar?.Trim(), StringComparison.OrdinalIgnoreCase));
+
+                        if (aEliminar == null)
+                        {
+                            Console.WriteLine("\nNo se encontró ningún producto con ese código.");
+                            break;
+                        }
+
+                        Console.Write($"¿Eliminar \"{aEliminar.Nombre}\"? (s/n): ");
+                        string confirmacion = Console.ReadLine();
+
+                        if (confirmacion?.Trim().ToLower() == "s")
+                        {
+                            servicio.Eliminar(codigoEliminar);
+                            Console.WriteLine("\n¡Producto eliminado con éxito!");
+                        }
+                        else
+                        {
+                            Console.WriteLine("\nEliminación cancelada.");
+                        }
+                        break;
+
+                    case "8":
                         salir = true;
                         Console.WriteLine("Saliendo del programa...");
                         break;
