@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Inventario.Core": {
+      "commandName": "Project"
+    },
+    "Perfil 1": {
+      "commandName": "Project"
+    }
+  }
+}

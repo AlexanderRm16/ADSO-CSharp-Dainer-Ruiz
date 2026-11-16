@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="Inventario.Core/Inventario.Core.csproj" />
+  <Project Path="Inventario.Datos/Inventario.Datos.csproj" />
+  <Project Path="Inventario.Interfaces/Inventario.Interfaces.csproj" />
+  <Project Path="Inventario.Negocio/Inventario.Negocio.csproj" />
+  <Project Path="Inventario/Inventario.csproj" />
+</Solution>
